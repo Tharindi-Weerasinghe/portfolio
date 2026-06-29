@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cybersecurity portfolio of Tharindi Weerasinghe featuring SOC labs, Linux, Python, AI security, and detection projects." />
   <title>Tharindi Weerasinghe | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <canvas id="cyber-canvas"></canvas>
+  <canvas id="cyber-canvas" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
 
   <header class="topbar">
-    <a href="#" class="brand">
+    <a href="#home" class="brand" aria-label="Go to home">
       <span class="brand-mark">TW</span>
       <span>Tharindi Weerasinghe</span>
     </a>
 
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -25,128 +28,148 @@
     </nav>
   </header>
 
-  <main>
+  <main id="home">
     <section class="hero">
-      <div class="hero-left">
+      <div class="hero-copy reveal">
         <div class="availability">
           <span></span>
           Available for internship opportunities
         </div>
 
-        <p class="label">Cybersecurity Undergraduate • SOC & Security Projects</p>
+        <p class="eyebrow">Cybersecurity Undergraduate • SOC Labs • AI Security</p>
 
-        <h1>
-          Building practical cybersecurity skills through
-          <span>real labs, tools, and detection projects.</span>
+        <h1 class="glitch-title" data-text="Security-minded builder.">
+          Security-minded builder.
+          <span>Learning by breaking, detecting, and documenting.</span>
         </h1>
 
         <p class="hero-text">
-  I am a cybersecurity undergraduate from Sri Lanka, focused on practical security labs,
-  Linux, networking, secure development, Python security tools, AI-powered security
-  applications, and cybersecurity project building.
-</p>
+          I build practical cybersecurity projects using Linux, Python, networking,
+          SIEM labs, secure development, and AI-powered security tools.
+        </p>
 
-        <div class="hero-buttons">
+        <div class="hero-actions">
           <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+          <a href="#contact" class="btn secondary">Let’s Connect</a>
         </div>
 
-        <div class="metrics">
-  <div>
-    <strong>8+</strong>
-    <span>Projects</span>
-  </div>
-  <div>
-    <strong>SOC</strong>
-    <span>Security Labs</span>
-  </div>
-  <div>
-    <strong>AI + Cyber</strong>
-    <span>Focus Area</span>
-  </div>
-</div>
+        <div class="signal-strip" aria-label="Portfolio highlights">
+          <div>
+            <strong>8+</strong>
+            <span>Projects</span>
+          </div>
+          <div>
+            <strong>SOC</strong>
+            <span>Security Labs</span>
+          </div>
+          <div>
+            <strong>AI + Cyber</strong>
+            <span>Focus Area</span>
+          </div>
+        </div>
+      </div>
 
-      <aside class="command-panel">
-        <div class="panel-header">
-          <span></span>
-          <span></span>
-          <span></span>
+      <aside class="ops-card reveal" aria-label="Cybersecurity profile terminal">
+        <div class="ops-grid" aria-hidden="true"></div>
+
+        <div class="ops-top">
+          <div class="window-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <p>security-profile.sh</p>
         </div>
 
-        <div class="terminal">
-          <p><span>$</span> whoami</p>
-          <p class="output">Tharindi Weerasinghe</p>
+        <div class="ops-body">
+          <div class="radar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <b></b>
+          </div>
 
-          <p><span>$</span> cat current_focus.txt</p>
-<p class="output">SOC Monitoring • Linux • Networking • Python • Secure Development</p>
+          <div class="terminal-lines">
+            <p><span>$</span> whoami</p>
+            <p class="output">Tharindi Weerasinghe</p>
 
-<p><span>$</span> latest_project --status</p>
-<p class="success">SSH Brute Force Detection Lab with Splunk</p>
+            <p><span>$</span> current_focus --scan</p>
+            <p class="success typing-line">SOC Monitoring • Linux • Python • Secure Development</p>
 
-<p><span>$</span> skills --scan</p>
-<ul>
-  <li>Linux log analysis</li>
-  <li>Security monitoring</li>
-  <li>Alert investigation</li>
-  <li>Python security tools</li>
-</ul>
+            <p><span>$</span> latest_project --status</p>
+            <p class="output">SSH Brute Force Detection Lab with Splunk</p>
+          </div>
 
-    <section id="about" class="section split-section">
+          <div class="mini-dashboard">
+            <div>
+              <small>LOGS</small>
+              <strong>auth.log</strong>
+            </div>
+            <div>
+              <small>RULE</small>
+              <strong>T1110</strong>
+            </div>
+            <div>
+              <small>MODE</small>
+              <strong>Blue Team</strong>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section split-section reveal">
       <div>
-        <p class="label">About Me</p>
-        <h2>Learning cybersecurity by building and explaining real projects.</h2>
+        <p class="eyebrow">About Me</p>
+        <h2>Cybersecurity learning, but with real evidence.</h2>
       </div>
 
-      <div class="info-card">
+      <div class="info-card liquid-card">
         <p>
-  I am a cybersecurity undergraduate who enjoys building hands-on security projects.
-  My current focus is improving my practical skills in SOC monitoring, Linux,
-  networking, Python, secure web applications, backend systems, and AI-based
-  security tools.
-</p>
+          I am a cybersecurity undergraduate from Sri Lanka who enjoys building
+          hands-on security projects and documenting what I learn clearly.
+        </p>
 
         <p>
-          I use projects to understand how systems work, how attacks leave evidence,
-          and how defenders can detect suspicious activity using logs, alerts, and dashboards.
+          My focus is SOC monitoring, Linux, networking, Python security tools,
+          secure web applications, backend systems, AI-based security tools,
+          log analysis, and alert investigation.
         </p>
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section reveal">
       <div class="section-title">
-        <p class="label">Technical Stack</p>
+        <p class="eyebrow">Technical Stack</p>
         <h2>Skills & Tools</h2>
       </div>
 
-      <div class="skill-cloud">
-        <div class="skill-cloud">
-  <span>Cybersecurity</span>
-  <span>SOC Monitoring</span>
-  <span>Log Analysis</span>
-  <span>Linux</span>
-  <span>Kali Linux</span>
-  <span>Networking</span>
-  <span>SSH Logs</span>
-  <span>Wazuh</span>
-  <span>Suricata</span>
-  <span>MITRE ATT&CK</span>
-  <span>Python</span>
-  <span>Flask</span>
-  <span>Machine Learning</span>
-  <span>Packet Analysis</span>
-  <span>Git & GitHub</span>
-  <span>MySQL</span>
-  <span>Spring Boot</span>
-  <span>Secure Development</span>
-</div>
+      <div class="skill-orbit">
+        <span>Cybersecurity</span>
+        <span>SOC Monitoring</span>
+        <span>Log Analysis</span>
+        <span>Linux</span>
+        <span>Kali Linux</span>
+        <span>Networking</span>
+        <span>SSH Logs</span>
+        <span>Wazuh</span>
+        <span>Suricata</span>
+        <span>MITRE ATT&CK</span>
+        <span>Python</span>
+        <span>Flask</span>
+        <span>Machine Learning</span>
+        <span>Packet Analysis</span>
+        <span>Git & GitHub</span>
+        <span>MySQL</span>
+        <span>Spring Boot</span>
+        <span>Secure Development</span>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <div class="section-title with-copy">
         <div>
-          <p class="label">Portfolio</p>
+          <p class="eyebrow">Portfolio</p>
           <h2>Featured Projects</h2>
         </div>
 
@@ -157,7 +180,7 @@
       </div>
 
       <div class="project-grid">
-        <article class="project-card hero-project">
+        <article class="project-card hero-project liquid-card">
           <div class="project-top">
             <span class="tag">SOC Detection Engineering</span>
             <span class="status">Completed</span>
@@ -166,9 +189,9 @@
           <h3>SSH Brute Force Detection Lab with Splunk</h3>
 
           <p>
-            Built a local SOC lab to detect repeated SSH failed login attempts using
-            Ubuntu authentication logs, Splunk indexing, SPL field extraction,
-            scheduled alerts, triggered alerts, and a monitoring dashboard.
+            Built a local SOC lab to detect repeated SSH failed login attempts using Ubuntu
+            authentication logs, Splunk indexing, SPL field extraction, scheduled alerts,
+            triggered alerts, and a monitoring dashboard.
           </p>
 
           <div class="project-points">
@@ -185,15 +208,16 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card liquid-card">
           <div class="project-top">
             <span class="tag">AI Security</span>
             <span class="status">Completed</span>
           </div>
 
           <h3>AI Resume Security Analyzer</h3>
+
           <p>
-            A Flask-based tool that analyzes resumes for privacy risks, PII exposure,
+            A Flask tool that analyzes resumes for privacy risks, PII exposure,
             suspicious URLs, and security recommendations.
           </p>
 
@@ -204,34 +228,34 @@
           </a>
         </article>
 
-        <article class="project-card">
-  <div class="project-top">
-    <span class="tag">SOC / Blue Team Lab</span>
-    <span class="status">Completed</span>
-  </div>
+        <article class="project-card liquid-card">
+          <div class="project-top">
+            <span class="tag">SOC / Blue Team Lab</span>
+            <span class="status">Completed</span>
+          </div>
 
-  <h3>SentinelLab: Wazuh and Suricata SOC Lab</h3>
+          <h3>SentinelLab: Wazuh and Suricata SOC Lab</h3>
 
-  <p>
-    A Linux-based SOC monitoring lab built with Wazuh, Suricata, Ubuntu and Kali Linux.
-    The project demonstrates SSH failed login detection, sudo activity monitoring,
-    Suricata IDS alert integration, log analysis and alert investigation.
-  </p>
+          <p>
+            A Linux-based SOC monitoring lab with Wazuh, Suricata, Ubuntu and Kali Linux
+            for failed login detection, sudo monitoring, IDS alerts, and investigation.
+          </p>
 
-  <div class="tech">Wazuh • Suricata • Kali Linux • Ubuntu • Nmap • SSH</div>
+          <div class="tech">Wazuh • Suricata • Kali Linux • Ubuntu • Nmap • SSH</div>
 
-  <a href="https://github.com/Tharindi-Weerasinghe/SentinelLab" target="_blank" rel="noopener noreferrer">
-    View Repository
-  </a>
-</article>
+          <a href="https://github.com/Tharindi-Weerasinghe/SentinelLab" target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
+        </article>
 
-        <article class="project-card">
+        <article class="project-card liquid-card">
           <div class="project-top">
             <span class="tag">Machine Learning</span>
             <span class="status">Completed</span>
           </div>
 
           <h3>Credit Card Fraud Detection</h3>
+
           <p>
             A fraud detection dashboard using machine learning models and visual analytics
             to identify suspicious transaction patterns.
@@ -244,13 +268,14 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card liquid-card">
           <div class="project-top">
             <span class="tag">Full Stack</span>
             <span class="status">Completed</span>
           </div>
 
           <h3>NexMeet Event Ticket Booking</h3>
+
           <p>
             A web-based event ticket booking system with event browsing, booking forms,
             and database connectivity.
@@ -263,12 +288,13 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card liquid-card">
           <div class="project-top">
             <span class="tag">Packet Analysis</span>
           </div>
 
           <h3>Packet Sniffer</h3>
+
           <p>
             A cybersecurity lab project that captures and analyzes packets to understand
             network protocols and traffic behavior.
@@ -281,15 +307,15 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card liquid-card">
           <div class="project-top">
             <span class="tag">Reconnaissance</span>
           </div>
 
           <h3>Network Scanner</h3>
+
           <p>
-            A Python-based scanner for discovering devices and open ports on authorized
-            local networks.
+            A Python scanner for discovering devices and open ports on authorized local networks.
           </p>
 
           <div class="tech">Python • Networking • Kali Linux</div>
@@ -299,15 +325,15 @@
           </a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card liquid-card">
           <div class="project-top">
             <span class="tag">Security Basics</span>
           </div>
 
           <h3>Password Strength Checker</h3>
+
           <p>
-            A simple security tool that checks password strength and provides improvement
-            suggestions.
+            A simple security tool that checks password strength and provides improvement suggestions.
           </p>
 
           <div class="tech">Python • Password Security</div>
@@ -319,13 +345,13 @@
       </div>
     </section>
 
-    <section id="certifications" class="section">
+    <section id="certifications" class="section reveal">
       <div class="section-title">
-        <p class="label">Learning</p>
+        <p class="eyebrow">Learning</p>
         <h2>Certifications</h2>
       </div>
 
-      <div class="cert-card">
+      <div class="cert-card liquid-card">
         <div>
           <h3>Cisco Introduction to Cybersecurity</h3>
           <p>
@@ -340,20 +366,28 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact-box">
-      <div>
-        <p class="label">Contact</p>
-        <h2>Let’s connect.</h2>
-        <p>
-          I’m open to internship opportunities, cybersecurity projects, and
-          learning-focused collaborations.
-        </p>
-      </div>
+    <section id="contact" class="section reveal">
+      <div class="contact-box liquid-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect.</h2>
+          <p>
+            I’m open to internship opportunities, cybersecurity projects,
+            and learning-focused collaborations.
+          </p>
+        </div>
 
-      <div class="contact-links">
-        <a href="https://github.com/Tharindi-Weerasinghe" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/tharindi-weerasinghe-0b543a2b7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tharindimaleesha0@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+        <div class="contact-links">
+          <a href="https://github.com/Tharindi-Weerasinghe" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/tharindi-weerasinghe-0b543a2b7/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tharindimaleesha0@gmail.com" target="_blank" rel="noopener noreferrer">
+            Email
+          </a>
+        </div>
       </div>
     </section>
   </main>
