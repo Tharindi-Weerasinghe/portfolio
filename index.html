@@ -6,237 +6,328 @@
   <title>Tharindi Weerasinghe | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <canvas id="cyber-canvas"></canvas>
 
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="#" class="logo">TW<span>_</span></a>
+  <header class="topbar">
+    <a href="#" class="brand">
+      <span class="brand-mark">TW</span>
+      <span>Tharindi Weerasinghe</span>
+    </a>
 
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
+  <main>
     <section class="hero">
-      <div class="hero-content">
-        <div class="status-pill">
-          <span class="pulse"></span>
+      <div class="hero-left">
+        <div class="availability">
+          <span></span>
           Available for internship opportunities
         </div>
 
-        <p class="eyebrow">Cybersecurity Undergraduate</p>
+        <p class="label">Cybersecurity Undergraduate • SOC & Security Projects</p>
 
         <h1>
-          Hi, I'm <span>Tharindi Weerasinghe</span>
+          Building practical cybersecurity skills through
+          <span>real labs, tools, and detection projects.</span>
         </h1>
 
         <p class="hero-text">
-          I build cybersecurity, AI, and software projects focused on network security,
-          privacy protection, fraud detection, and practical threat analysis.
+          I am a cybersecurity undergraduate from Sri Lanka, focused on SOC analysis,
+          Linux security, Splunk detection engineering, Python security tools,
+          AI-powered security applications, and fraud detection projects.
         </p>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">Explore Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
         </div>
 
-        <div class="quick-stats">
+        <div class="metrics">
           <div>
-            <strong>7+</strong>
+            <strong>8+</strong>
             <span>Projects</span>
           </div>
           <div>
-            <strong>Cyber</strong>
-            <span>Specialization</span>
+            <strong>Splunk</strong>
+            <span>SOC Lab</span>
           </div>
           <div>
-            <strong>AI + Security</strong>
+            <strong>AI + Cyber</strong>
             <span>Focus Area</span>
           </div>
         </div>
       </div>
 
-      <div class="hero-terminal">
-        <div class="terminal-top">
+      <aside class="command-panel">
+        <div class="panel-header">
           <span></span>
           <span></span>
           <span></span>
+          <p>security-profile.sh</p>
         </div>
 
-        <div class="terminal-body">
+        <div class="terminal">
           <p><span>$</span> whoami</p>
           <p class="output">Tharindi Weerasinghe</p>
 
-          <p><span>$</span> cat focus.txt</p>
-          <p class="output">Cybersecurity • Python • Linux • AI Security</p>
+          <p><span>$</span> cat current_focus.txt</p>
+          <p class="output">SOC Analysis • Splunk • Linux • Python • AI Security</p>
 
-          <p><span>$</span> scan --skills</p>
+          <p><span>$</span> latest_project --status</p>
+          <p class="success">SSH Brute Force Detection Lab completed</p>
+
+          <p><span>$</span> skills --scan</p>
           <ul>
-            <li>Network Security</li>
-            <li>Packet Analysis</li>
-            <li>Fraud Detection</li>
-            <li>Secure Web Apps</li>
+            <li>Linux log analysis</li>
+            <li>Splunk SPL queries</li>
+            <li>Alert and dashboard creation</li>
+            <li>Python security tools</li>
           </ul>
         </div>
-      </div>
+      </aside>
     </section>
-  </header>
 
-  <main>
-    <section id="about" class="section about-grid">
+    <section id="about" class="section split-section">
       <div>
-        <p class="section-label">About Me</p>
-        <h2>Building practical security skills through real projects.</h2>
+        <p class="label">About Me</p>
+        <h2>Learning cybersecurity by building and explaining real projects.</h2>
       </div>
 
-      <div class="glass-card">
+      <div class="info-card">
         <p>
-          I am a cybersecurity undergraduate from Sri Lanka with hands-on experience in
-          Python, Flask, Linux, network scanning, packet analysis, machine learning,
-          and secure web application development.
+          I am a cybersecurity undergraduate who enjoys building hands-on security projects.
+          My current focus is improving my practical skills in SOC monitoring, Linux,
+          Splunk, networking, Python, secure web applications, and AI-based security tools.
         </p>
+
         <p>
-          My goal is to grow into a skilled cybersecurity professional who can understand
-          systems, identify risks, and build tools that solve real security problems.
+          I use projects to understand how systems work, how attacks leave evidence,
+          and how defenders can detect suspicious activity using logs, alerts, and dashboards.
         </p>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <p class="section-label">Technical Stack</p>
-      <h2>Skills I Use In My Projects</h2>
+      <div class="section-title">
+        <p class="label">Technical Stack</p>
+        <h2>Skills & Tools</h2>
+      </div>
 
-      <div class="skills-grid">
-        <span>Python</span>
-        <span>Flask</span>
-        <span>Java</span>
-        <span>Spring Boot</span>
-        <span>MySQL</span>
+      <div class="skill-cloud">
+        <span>Splunk</span>
+        <span>SPL Queries</span>
         <span>Linux</span>
         <span>Kali Linux</span>
-        <span>Networking</span>
-        <span>Git & GitHub</span>
+        <span>SSH Logs</span>
+        <span>Python</span>
+        <span>Flask</span>
         <span>Machine Learning</span>
         <span>Packet Analysis</span>
-        <span>Cybersecurity</span>
+        <span>Networking</span>
+        <span>Git & GitHub</span>
+        <span>MySQL</span>
+        <span>Spring Boot</span>
+        <span>Security Analysis</span>
+        <span>MITRE ATT&CK</span>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <div class="section-heading">
+      <div class="section-title with-copy">
         <div>
-          <p class="section-label">Portfolio</p>
+          <p class="label">Portfolio</p>
           <h2>Featured Projects</h2>
         </div>
+
         <p>
-          A mix of cybersecurity labs, AI-powered tools, and full-stack web applications.
+          Practical cybersecurity, AI security, fraud detection, and full-stack projects
+          built for learning, documentation, and portfolio growth.
         </p>
       </div>
 
-      <div class="projects-grid">
-        <article class="project-card featured">
-          <div class="project-tag">AI Security</div>
+      <div class="project-grid">
+        <article class="project-card hero-project">
+          <div class="project-top">
+            <span class="tag">SOC Detection Engineering</span>
+            <span class="status">Completed</span>
+          </div>
+
+          <h3>SSH Brute Force Detection Lab with Splunk</h3>
+
+          <p>
+            Built a local SOC lab to detect repeated SSH failed login attempts using
+            Ubuntu authentication logs, Splunk indexing, SPL field extraction,
+            scheduled alerts, triggered alerts, and a monitoring dashboard.
+          </p>
+
+          <div class="project-points">
+            <span>Splunk SIEM</span>
+            <span>Linux auth.log</span>
+            <span>MITRE T1110</span>
+            <span>Alerting</span>
+          </div>
+
+          <div class="tech">Splunk • Kali Linux • Ubuntu • SSH • SPL • SOC Analysis</div>
+
+          <a href="https://github.com/Tharindi-Weerasinghe/ssh-bruteforce-splunk-lab" target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="tag">AI Security</span>
+          </div>
+
           <h3>AI Resume Security Analyzer</h3>
           <p>
             A Flask-based tool that analyzes resumes for privacy risks, PII exposure,
             suspicious URLs, and security recommendations.
           </p>
-          <div class="tech">Python • Flask • Privacy • Security Analysis</div>
-          <a href="https://github.com/Tharindi-Weerasinghe/ai-resume-security-analyzer" target="_blank">View Repository</a>
-        </article>
 
-        <article class="project-card featured">
-          <div class="project-tag">Machine Learning</div>
-          <h3>Credit Card Fraud Detection</h3>
-          <p>
-            A fraud detection dashboard using machine learning models and visual analytics
-            to identify suspicious transactions.
-          </p>
-          <div class="tech">Python • Flask • ML • Cyber Analytics</div>
-          <a href="https://github.com/Tharindi-Weerasinghe/Credit-Card-Fraud-Detection" target="_blank">View Repository</a>
+          <div class="tech">Python • Flask • Privacy • Security Analysis</div>
+
+          <a href="https://github.com/Tharindi-Weerasinghe/ai-resume-security-analyzer" target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
         </article>
 
         <article class="project-card">
-          <div class="project-tag">Full Stack</div>
+          <div class="project-top">
+            <span class="tag">Machine Learning</span>
+          </div>
+
+          <h3>Credit Card Fraud Detection</h3>
+          <p>
+            A fraud detection dashboard using machine learning models and visual analytics
+            to identify suspicious transaction patterns.
+          </p>
+
+          <div class="tech">Python • Flask • ML • Cyber Analytics</div>
+
+          <a href="https://github.com/Tharindi-Weerasinghe/Credit-Card-Fraud-Detection" target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="tag">Full Stack</span>
+          </div>
+
           <h3>NexMeet Event Ticket Booking</h3>
           <p>
             A web-based event ticket booking system with event browsing, booking forms,
             and database connectivity.
           </p>
+
           <div class="tech">Spring Boot • MySQL • HTML • CSS</div>
-          <a href="https://github.com/Tharindi-Weerasinghe/NexMeet-Event-Ticket-Booking" target="_blank">View Repository</a>
+
+          <a href="https://github.com/Tharindi-Weerasinghe/NexMeet-Event-Ticket-Booking" target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
         </article>
 
         <article class="project-card">
-          <div class="project-tag">Network Security</div>
+          <div class="project-top">
+            <span class="tag">Packet Analysis</span>
+          </div>
+
           <h3>Packet Sniffer</h3>
           <p>
-            A cybersecurity lab project that captures and analyzes network packets to
-            understand protocols and traffic behavior.
+            A cybersecurity lab project that captures and analyzes packets to understand
+            network protocols and traffic behavior.
           </p>
+
           <div class="tech">Python • Scapy • Packet Analysis</div>
-          <a href="https://github.com/Tharindi-Weerasinghe/Packet-Sniffer" target="_blank">View Repository</a>
+
+          <a href="https://github.com/Tharindi-Weerasinghe/Packet-Sniffer" target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
         </article>
 
         <article class="project-card">
-          <div class="project-tag">Reconnaissance</div>
+          <div class="project-top">
+            <span class="tag">Reconnaissance</span>
+          </div>
+
           <h3>Network Scanner</h3>
           <p>
             A Python-based scanner for discovering devices and open ports on authorized
-            networks.
+            local networks.
           </p>
+
           <div class="tech">Python • Networking • Kali Linux</div>
-          <a href="https://github.com/Tharindi-Weerasinghe/Network-Scanner" target="_blank">View Repository</a>
+
+          <a href="https://github.com/Tharindi-Weerasinghe/Network-Scanner" target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
         </article>
 
         <article class="project-card">
-          <div class="project-tag">Security Basics</div>
+          <div class="project-top">
+            <span class="tag">Security Basics</span>
+          </div>
+
           <h3>Password Strength Checker</h3>
           <p>
             A simple security tool that checks password strength and provides improvement
             suggestions.
           </p>
+
           <div class="tech">Python • Password Security</div>
-          <a href="https://github.com/Tharindi-Weerasinghe/password-strength-checker" target="_blank">View Repository</a>
+
+          <a href="https://github.com/Tharindi-Weerasinghe/password-strength-checker" target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
         </article>
       </div>
     </section>
 
     <section id="certifications" class="section">
-  <p class="section-label">Learning</p>
-  <h2>Certifications</h2>
+      <div class="section-title">
+        <p class="label">Learning</p>
+        <h2>Certifications</h2>
+      </div>
 
-  <div class="cert-card">
-    <h3>Cisco Introduction to Cybersecurity</h3>
-    <p>
-      Completed foundational cybersecurity training covering threats, attacks,
-      online safety, and security basics.
-    </p>
-    <a class="cert-link" href="certificates/cisco-introduction-to-cybersecurity.pdf" target="_blank">
-      View Certificate
-    </a>
-  </div>
-</section>
+      <div class="cert-card">
+        <div>
+          <h3>Cisco Introduction to Cybersecurity</h3>
+          <p>
+            Completed foundational cybersecurity training covering threats, attacks,
+            online safety, and security basics.
+          </p>
+        </div>
 
-    <section id="contact" class="section contact-section">
+        <a href="certificates/cisco-introduction-to-cybersecurity.pdf" target="_blank" rel="noopener noreferrer">
+          View Certificate
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-box">
       <div>
-        <p class="section-label">Contact</p>
+        <p class="label">Contact</p>
         <h2>Let’s connect.</h2>
         <p>
-          I’m open to internship opportunities, cybersecurity projects, and learning-focused
-          collaborations.
+          I’m open to internship opportunities, cybersecurity projects, and
+          learning-focused collaborations.
         </p>
       </div>
 
       <div class="contact-links">
-        <a href="https://github.com/Tharindi-Weerasinghe" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/tharindi-weerasinghe-0b543a2b7/ target="_blank">LinkedIn</a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tharindimaleesha0@gmail.com" target="_blank">Email</a>
+        <a href="https://github.com/Tharindi-Weerasinghe" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/tharindi-weerasinghe-0b543a2b7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tharindimaleesha0@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
       </div>
     </section>
   </main>
